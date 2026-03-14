@@ -762,6 +762,11 @@ em {
     color: rgba(255, 255, 255, 0.4);
 }
 
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
 .footer-social {
     display: flex;
     align-items: center;
@@ -777,6 +782,10 @@ em {
 .footer-social:hover {
     background: #1877f2;
     color: var(--white);
+}
+
+.footer-social[aria-label="Instagram"]:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 /* ============================================
