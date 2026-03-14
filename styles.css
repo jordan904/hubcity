@@ -809,6 +809,10 @@ em {
    Responsive
    ============================================ */
 @media (max-width: 960px) {
+    .navbar {
+        background: rgba(248, 246, 241, 0.98);
+    }
+
     .nav-links {
         position: fixed;
         top: var(--nav-h);
@@ -816,11 +820,16 @@ em {
         right: 0;
         bottom: 0;
         flex-direction: column;
-        background: var(--bg);
+        background: #f8f6f1;
         padding: 40px 24px;
         gap: 24px;
         transform: translateX(100%);
         transition: transform var(--ease);
+    }
+
+    .nav-links a {
+        color: var(--text) !important;
+        font-size: 1.1rem !important;
     }
 
     .nav-links.active { transform: translateX(0); }
