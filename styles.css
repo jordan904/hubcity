@@ -163,7 +163,7 @@ em {
 .hero-split {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: calc(100vh - var(--nav-h));
+    min-height: calc(85vh - var(--nav-h));
 }
 
 .hero-left {
