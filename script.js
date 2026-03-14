@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.about-text, .contact-right').forEach(el => el.classList.add('reveal-right'));
     document.querySelectorAll('.gallery-item').forEach(el => el.classList.add('reveal-scale'));
     document.querySelectorAll('.services-row').forEach(el => el.classList.add('stagger-children'));
-    document.querySelectorAll('.section-head, .about-stats, .trust-bar').forEach(el => el.classList.add('reveal'));
+    document.querySelectorAll('.section-head, .about-stats').forEach(el => el.classList.add('reveal'));
 
     const allAnimated = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children');
 
