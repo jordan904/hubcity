@@ -68,8 +68,8 @@ em {
     height: var(--nav-h);
     display: flex;
     align-items: center;
-    background: rgba(248, 246, 241, 0.9);
-    backdrop-filter: blur(16px);
+    background: #f8f6f1;
+    backdrop-filter: none;
     transition: box-shadow var(--ease);
 }
 
@@ -835,10 +835,6 @@ em {
    Responsive
    ============================================ */
 @media (max-width: 960px) {
-    .navbar {
-        background: rgba(248, 246, 241, 0.98);
-    }
-
     .nav-links {
         position: fixed;
         top: var(--nav-h);
@@ -856,6 +852,10 @@ em {
     .nav-links a {
         color: var(--text) !important;
         font-size: 1.1rem !important;
+    }
+
+    .nav-links .nav-cta {
+        color: var(--white) !important;
     }
 
     .nav-links.active { transform: translateX(0); }
