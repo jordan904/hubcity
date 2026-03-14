@@ -851,9 +851,9 @@ em {
         inset: 0;
         background: linear-gradient(
             to bottom,
-            rgba(248, 246, 241, 0.82) 0%,
-            rgba(248, 246, 241, 0.7) 50%,
-            rgba(248, 246, 241, 0.85) 100%
+            rgba(248, 246, 241, 0.55) 0%,
+            rgba(248, 246, 241, 0.4) 50%,
+            rgba(248, 246, 241, 0.65) 100%
         );
         z-index: 1;
     }
@@ -872,8 +872,10 @@ em {
         padding: 0 24px;
     }
 
-    .hero h1 { text-shadow: 0 1px 2px rgba(248, 246, 241, 0.5); }
-    .hero-content > p { color: var(--text); }
+    .hero h1 { text-shadow: 0 2px 12px rgba(248, 246, 241, 0.8), 0 0 40px rgba(248, 246, 241, 0.4); }
+    .hero-content > p { color: var(--text); text-shadow: 0 1px 8px rgba(248, 246, 241, 0.7); }
+    .hero-eyebrow { text-shadow: 0 1px 8px rgba(248, 246, 241, 0.7); }
+    .hero-btns .btn { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
 
     /* Trust bar overlaps bottom of hero on mobile */
     .trust-bar {
