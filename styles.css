@@ -830,7 +830,7 @@ em {
 
     .hero-split {
         grid-template-columns: 1fr;
-        min-height: 100vh;
+        min-height: 80vh;
         position: relative;
     }
 
@@ -842,6 +842,7 @@ em {
     }
 
     .hero-right img {
+        object-position: center top;
         animation: heroZoomOut 8s ease-out forwards;
     }
 
@@ -861,7 +862,7 @@ em {
     .hero-left {
         position: relative;
         z-index: 2;
-        padding: calc(var(--nav-h) + 40px) 0 80px;
+        padding: calc(var(--nav-h) + 80px) 0 80px;
         display: flex;
         align-items: flex-start;
     }
@@ -877,11 +878,11 @@ em {
     .hero-eyebrow { text-shadow: 0 1px 8px rgba(248, 246, 241, 0.7); }
     .hero-btns .btn { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
 
-    /* Trust bar overlaps bottom of hero on mobile */
+    /* Trust bar sits flush at bottom of hero on mobile */
     .trust-bar {
         position: relative;
         z-index: 3;
-        margin-top: -48px;
+        margin-top: 0;
     }
 
     .about-layout { grid-template-columns: 1fr; gap: 40px; }
